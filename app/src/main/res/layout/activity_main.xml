@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nombreID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Ingrese Nombres"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/apellidosID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nombreID"
+        android:hint="Apellidos"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/sexoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/apellidosID"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbtnmasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/rbtnfemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+        </LinearLayout>
+
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/fechaID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sexoID"
+        android:hint="Ingresar fecha de nacimiento"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese email"
+        android:layout_below="@id/fechaID"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_below="@id/emailID"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerList"
+        android:layout_marginTop="10dp">
+
+        <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+            android:text="MI CATEGORIA OK"
+
+        />
+
+        <Button
+            android:id="@+id/rankingID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RANKING"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
