@@ -14,5 +14,6 @@ public class RankingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ranking);
 
         recyclerView=findViewById(R.id.recyclerEncuesta);
+
     }
 }
